@@ -1,0 +1,84 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+.btn-container{
+  margin: 50px auto 10px;
+  width: 40%;
+}
+.btn{
+  letter-spacing: 5px;
+  text-shadow: 1px;
+  font-weight: bolder;
+}
+.btn:hover{
+  background-color: transparent;
+}
+
+#credit{
+  font-size: 1rem;
+}
+body {
+  background-color: #3DB2FF;
+  font-family: 'Neucha', cursive;
+}
+
+h1 {
+  margin: 30px;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #FFEDDA;
+}
+#jua{
+  color: #FF2442;
+  text-decoration: underline;
+}
+#jua:hover{
+  color: #FFBD9B;
+  text-decoration: underline;
+  font-size: 9rem;
+  transition: 0.5s ease-in;
+}
+p {
+  font-size: 2rem;
+  color: #152D35;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 3%;
+  color: #201c1c;
+  text-align: center;
+}
+ion-icon{
+  color: #DDDDDD;
+  text-decoration: none;
+}
+ion-icon:hover{
+  font-size: 2rem;
+  color: #3B0000;
+}
+#name:hover{
+  color: #CA3E47;
+}
+
+.score-container{
+  margin: 50px auto 10px;
+  letter-spacing: 30px;
+  text-align: center;
+  font-size: 2rem;
+}
+#score1 #score2{
+  text-align: center;
+}
