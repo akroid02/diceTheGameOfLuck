@@ -7,7 +7,7 @@
 .dice {
   text-align: center;
   display: inline-block;
-
+  margin-top: 100px;
 }
 
 .btn-container{
@@ -22,7 +22,9 @@
 .btn:hover{
   background-color: transparent;
 }
-
+#dice-button{
+  margin-bottom: 30px;
+}
 #credit{
   font-size: 1rem;
 }
@@ -57,7 +59,7 @@ img {
 }
 
 footer {
-  margin-top: 3%;
+  margin-top: 20px;
   color: #201c1c;
   text-align: center;
 }
@@ -81,4 +83,14 @@ ion-icon:hover{
 }
 #score1 #score2{
   text-align: center;
+}
+#player-1, #player-2{
+  position: fixed;
+  top: 230px;
+}
+#player-1{
+  left: 790px;
+}
+#player-2{
+  left: 1040px;
 }
