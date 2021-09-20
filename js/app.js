@@ -16,7 +16,7 @@ document.querySelectorAll(".btn")[0].addEventListener("click", function() {
         document.querySelector("h1").innerHTML = "🚩 Player 1 Wins!";
         document.querySelector("#score1").innerHTML = score1;
         document.querySelector("#player-1").style.fontSize = "3rem";
-        document.querySelector("#player-1").style.left = "760px";
+        document.querySelector("#player-1").style.left = "740px";
         document.querySelector("#player-2").style.left = "1040px";
         document.querySelector("#player-2").style.fontSize = "2rem";
         document.querySelector("#player-1").style.color = "#FF2442";
@@ -27,7 +27,7 @@ document.querySelectorAll(".btn")[0].addEventListener("click", function() {
         document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
         document.querySelector("#score2").innerHTML = score2;
         document.querySelector("#player-2").style.fontSize = "3rem";
-        document.querySelector("#player-2").style.left = "1025px";
+        document.querySelector("#player-2").style.left = "1015px";
         document.querySelector("#player-1").style.left = "790px";
         document.querySelector("#player-1").style.fontSize = "2rem";
         document.querySelector("#player-2").style.color = "#FF2442";
