@@ -3,7 +3,6 @@
   margin: auto;
   text-align: center;
 }
-
 .dice {
   text-align: center;
   display: inline-block;
@@ -42,12 +41,11 @@ h1 {
 #jua{
   color: #FF2442;
   text-decoration: underline;
+  transition: all 0.5s ease;
 }
 #jua:hover{
   color: #FFBD9B;
-  text-decoration: underline;
   font-size: 9rem;
-  transition: 0.5s ease-in;
 }
 p {
   font-size: 2rem;
