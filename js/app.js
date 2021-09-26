@@ -1,53 +1,59 @@
-document.querySelectorAll(".btn")[0].addEventListener("click", function() {
-    var randomNumber1 = Math.floor(Math.random() * 6) + 1;
-    var randomNumber2 = Math.floor(Math.random() * 6) + 1;
-    var randomImage = "dice" + randomNumber1 + ".png";
-    var randomSetImage = "images/" + randomImage;
-    var image1 = document.querySelector(".img1");
-    image1.setAttribute("src", randomSetImage);
-
-    var randomImage2 = "dice" + randomNumber2 + ".png";
-    var randomSetImage2 = "images/" + randomImage2;
-    var image2 = document.querySelector(".img2");
-    image2.setAttribute("src", randomSetImage2);
-
-    if (randomNumber1 > randomNumber2){
-        score1 += 1;
-        document.querySelector("h1").innerHTML = "🚩 Player 1 Wins!";
-        document.querySelector("#score1").innerHTML = score1;
-        document.querySelector("#player-1").style.fontSize = "3rem";
-        document.querySelector("#player-1").style.left = "740px";
-        document.querySelector("#player-2").style.left = "1040px";
-        document.querySelector("#player-2").style.fontSize = "2rem";
-        document.querySelector("#player-1").style.color = "#FF2442";
-        document.querySelector("#player-2").style.color = "#152D35";
-    }
-    else if (randomNumber2 > randomNumber1){
-        score2 += 1;
-        document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
-        document.querySelector("#score2").innerHTML = score2;
-        document.querySelector("#player-2").style.fontSize = "3rem";
-        document.querySelector("#player-2").style.left = "1015px";
-        document.querySelector("#player-1").style.left = "790px";
-        document.querySelector("#player-1").style.fontSize = "2rem";
-        document.querySelector("#player-2").style.color = "#FF2442";
-        document.querySelector("#player-1").style.color = "#152D35";
-    }
-    else{
-        document.querySelector("h1").innerHTML = "🚩 Draw 🚩";
-        document.querySelector("#player-2").style.fontSize = "2rem";
-        document.querySelector("#player-1").style.fontSize = "2rem";
-        document.querySelector("#player-1").style.left = "790px";
-        document.querySelector("#player-2").style.left = "1040px";
-        document.querySelector("#player-2").style.color = "#152D35";
-        document.querySelector("#player-1").style.color = "#152D35";
-    }
-})
-
-document.querySelectorAll(".btn")[1].addEventListener("click", function(){
-    location.reload();
-})
-
+//Score Declaration
 let score1 = 0;
 let score2 = 0;
 
+// Functions for Dice Button
+$("#dice-button").click(() => {
+
+    //Random number generator from 1-6
+    let randomNumber1 = Math.floor(Math.random() * 6) + 1;
+    let randomNumber2 = Math.floor(Math.random() * 6) + 1;
+
+    //Random image change player 1
+    let randomImage = "dice" + randomNumber1 + ".png";
+    let randomSetImage = "images/" + randomImage;
+    $(".img1").attr("src", randomSetImage);
+
+    //Random image change player 2
+    let randomImage2 = "dice" + randomNumber2 + ".png";
+    let randomSetImage2 = "images/" + randomImage2;
+    $(".img2").attr("src", randomSetImage2);
+
+    //Conditional for random numbers
+    if (randomNumber1 > randomNumber2) {
+        score1 += 1;
+        $("h1").html("🚩 Player 1 Wins!");
+        $("#score1").html(score1);
+        $("#player-1").css("fontSize", "3rem");
+        $("#player-1").css("left", "760px");
+        $("#player-2").css("left", "1040px");
+        $("#player-2").css("fontSize", "2rem");
+        $("#player-1").css("color", "#FF2442");
+        $("#player-2").css("color", "#152D35");
+    }
+    else if (randomNumber2 > randomNumber1) {
+        score2 += 1;
+        $("h1").html("Player 2 Wins! 🚩");
+        $("#score2").html(score2);
+        $("#player-2").css("fontSize", "3rem");
+        $("#player-2").css("left", "1025px");
+        $("#player-1").css("left", "790px");
+        $("#player-1").css("fontSize", "2rem");
+        $("#player-2").css("color", "#FF2442");
+        $("#player-1").css("color", "#152D35");
+    }
+    else {
+        $("h1").html("🚩 Draw 🚩")
+        $("#player-2").css("fontSize", "2rem");
+        $("#player-1").css("fontSize", "2rem");
+        $("#player-1").css("left", "790px");
+        $("#player-2").css("left", "1040px");
+        $("#player-2").css("color", "#152D35");
+        $("#player-1").css("color", "#152D35");
+    }
+});
+
+// Refresh the Window
+$("#reset-button").click(() => {
+    location.reload();
+});
