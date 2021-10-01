@@ -93,3 +93,10 @@ ion-icon:hover{
 #player-2{
   left: 1040px;
 }
+
+.mouse{
+  position: absolute;
+  top: 30%;
+  left: 1%;
+  text-align: left;
+}
