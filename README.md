@@ -1,1 +1,1 @@
-# diceTheJua
+# diceTheGameOfLuck
