@@ -35,7 +35,7 @@ body {
 h1 {
   margin: 30px;
   text-shadow: 5px 0 #232931;
-  font-size: 4rem;
+  font-size: 6rem;
   color: #FFEDDA;
 }
 #jua{
@@ -45,7 +45,7 @@ h1 {
 }
 #jua:hover{
   color: #FFBD9B;
-  font-size: 9rem;
+  font-size: 6.5rem;
 }
 p {
   font-size: 2rem;
