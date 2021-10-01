@@ -57,3 +57,9 @@ $("#dice-button").click(() => {
 $("#reset-button").click(() => {
     location.reload();
 });
+
+//Mouse position
+$(window).mousemove((event) => {
+    $("#x").html(event.pageX);
+    $("#y").html(event.pageY);
+})
